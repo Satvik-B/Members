@@ -171,6 +171,25 @@ img:not(.prof-img) {
 .prof-card:hover .overlay {
     opacity: 1;
 }
+.overlay2 {
+    position: absolute;
+    top: 0;
+    left: 5%;
+    height: 100%;
+    width: 90%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.prof-card:hover .overlay2 {
+    opacity: 1;
+}
+@media (max-width: 600px) {
+    .overlay, .overlay2 {
+        left: 3%;
+	    width: 94%;
+    }
+}
 .overlay-text {
     color: white;
     position: absolute;
